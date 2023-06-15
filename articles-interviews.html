@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./top-nav.css">
+    <link rel="stylesheet" type="text/css" href="./footer-new.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Katherine McCord, Writer - Articles and Interviews</title>
+</head>
+<body>
+    <header>  
+
+        <div class="top-box"></div>
+    
+          <nav>
+    
+            <a href="index.html"><h1 class="title">Katherine<br class="small-screens-title"> McCord</h1></a>
+    
+            <ul class="main-nav"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="essays.html">Essays</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a href="teaching.html">Teaching</a></li>
+              <li><a class="active-nav" href="articles-interviews.html">Articles/Interviews</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+    
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="essays.html">Essays</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a href="teaching.html">Teaching</a></li>
+              <li><a class="active-nav" href="articles-interviews.html">Articles/Interviews</a></li>
+              <li><a href="about.html">About</a></li>
+            </div>
+            
+            <div class="hamburger-container">
+              <span class="hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            
+            <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+          </nav>
+      </header>
+
+      <h2>Articles</h2>
+      <h3>Select a publication or service below<br>
+        to fly over to the articles/interviews.</h3>
+
+      <section class="articles-links">
+        <a href="https://carrollmagazine.com/writing-about-the-unknowable/" target="_blank"><u>Carroll Magazine</u></a>
+        <a href="https://www.fredericknewspost.com/places/local/frederick_county/local-woman-opens-up-about-cia-life-in-new-memoir/article_1f85c8fd-d83f-5fe1-a21f-8acfee855546.html" target="_blank"><u>Frederick News-Post</u></a>
+      </section>
+
+      <section class="flying-girls">
+        <img id="flying-girl-1" class="flying-girl" src="Flying Illustration Vectorized-min.png" alt="illustration of girls with braids wearing triangle-shaped dresses flying playfully through the air from left to right">
+
+        <img id="flying-girl-2" class="flying-girl" src="Flying Illustration Vectorized-min.png" alt="illustration of girls with braids wearing triangle-shaped dresses flying playfully through the air from left to right">
+
+        <img id="flying-girl-3" class="flying-girl" src="Flying Illustration Vectorized-min.png" alt="illustration of girls with braids wearing triangle-shaped dresses flying playfully through the air from left to right">
+
+        <img id="flying-girl-4" class="flying-girl" src="Flying Illustration Vectorized-min.png" alt="illustration of girls with braids wearing triangle-shaped dresses flying playfully through the air from left to right">
+    </section>
+
+    <footer>
+        <ul class="footer-nav"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a id="articles-footer" class="active-footer" href="articles-interviews.html">Articles/Interviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Copyright © 2023 Katherine McCord</li>
+            <li>Website by Audrey Meier</li>
+        </ul>
+    </footer>
+</body>
+</html>

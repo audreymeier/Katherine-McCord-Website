@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./top-nav.css">
+    <link rel="stylesheet" type="text/css" href="./footer-new.css">
+    <link rel="stylesheet" type="text/css" href="./back-to-top-button.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Katherine McCord, Writer - Teaching</title>
+</head>
+<body>
+    <header>  
+
+        <div class="top-box"></div>
+    
+          <nav>
+    
+            <a href="index.html"><h1 class="title">Katherine<br class="small-screens-title"> McCord</h1></a>
+    
+            <ul class="main-nav"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="essays.html">Essays</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a class="active-nav" href="teaching.html">Teaching</a></li>
+              <li><a href="articles-interviews.html">Articles/Interviews</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+    
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="essays.html">Essays</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a class="active-nav" href="teaching.html">Teaching</a></li>
+              <li><a href="articles-interviews.html">Articles/Interviews</a></li>
+              <li><a href="about.html">About</a></li>
+            </div>
+            
+            <div class="hamburger-container">
+              <span class="hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            
+            <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+          </nav>
+      </header>
+
+
+      <h2>Teaching</h2>
+
+      <section class="teaching">
+        <p class="teaching-list">Katherine is teaching/has taught Creative Writing for<br class="big-screens">
+
+            Carroll County Community College, MD*<br><br>
+
+            Recreation and Parks, Howard County, MD*<br><br>
+
+            Stevenson University<br><br>
+
+            Story Circle Network*<br><br>
+
+            The Loft*<br><br>
+
+            University of Maryland University College<br><br>
+
+            WOW (Women on Writing)*<br><br>
+
+            The Writer’s Center*<br><br>
+
+            The Writing District*<br><br>
+
+            Writing Workshops Dallas*<br><br>
+
+
+            To invite Katherine to speak, read,<br> 
+            or teach at your event, etc., <br>
+            please contact her at <br>
+            kittymccord@icloud.com.<br><br>
+
+
+            * These are all noncredit venues, so anyone can take her classes.<br>Take one (or two or three . . .) :)
+        </p>
+
+      </section>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="arrow" src="Back to top arrow.png" alt="small arrow curving from the right bottom to the top"></button>
+
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <footer>
+        <ul class="footer-nav"> 
+            <li id="a"><a href="index.html">Home</a></li>
+            <li id="b"><a href="books.html">Books</a></li>
+            <li id="c"><a href="reviews.html">Reviews</a></li>
+            <li id="d"><a href="essays.html">Essays</a></li>
+            <li id="e"><a href="links.html">Links</a></li>
+            <li id="f"><a class="active-footer" href="teaching.html">Teaching</a></li>
+            <li id="g"><a id="articles-footer" href="articles-interviews.html">Articles/Interviews</a></li>
+            <li id="h"><a href="about.html">About</a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Copyright © 2023 <br class="small-screens">Katherine McCord</li>
+            <li>Website by <br class="small-screens">Audrey Meier</li>
+        </ul>
+    </footer>
+</body>
+</html>

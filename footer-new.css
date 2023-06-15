@@ -1,0 +1,120 @@
+footer {
+    width: 100vw;
+    height: 9.375rem;
+    background-color: #9CD1AA;
+    font-family: 'Open Sans', sans-serif;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+}
+
+a {
+    /* HOVER OFF */
+    transition: 0.4s;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: .9375rem;
+    text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 43.5625rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav a:hover {
+    font-weight: 700;
+    font-size: 1.0625rem;
+    transition: 0.4s;
+}
+
+.footer-nav a:visited {
+    color: #323232;
+}
+  
+.active-footer {
+    font-weight: 700;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0px;
+}
+
+.small-screens {
+    display: none;
+}
+
+#articles-footer {
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 16rem;
+        font-size: .9375rem;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        /* height: 10.5rem; */
+        height: auto;
+        max-width: 327px;
+        min-width: 298px;
+        display: flex;
+        columns: 2;
+        margin: auto;
+        margin-top: -0.625rem;
+        /* margin-bottom: 1rem;
+        padding-bottom: 1rem; */
+    }
+
+    .footer-nav a:hover {
+        font-weight: 400;
+        font-size: .9375rem;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        padding: 0;
+        padding-bottom: 1rem;
+        justify-items: center;
+    }
+
+    .copyright {
+        margin-top: .5rem;
+    }
+    
+    #flex { display: flex; flex-direction: column; }
+    #a { order: 1; }
+    #b { order: 3; }
+    #c { order: 5; }
+    #d { order: 7; }
+    #e { order: 2; }
+    #f { order: 4; }
+    #g { order: 6; }
+    #h { order: 8; }
+
+    .small-screens {
+        display: block;
+        /* MAKE SURE THAT THIS DOES NOT DUPLICATE
+        IF STYLESHEETS ARE COMBINED */
+    }
+
+    #articles-footer {
+        padding: 0;
+    }
+}

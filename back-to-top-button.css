@@ -1,0 +1,32 @@
+/* button becomes visible when user starts to scroll the page */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #9CD1AA;
+    cursor: pointer; 
+    border-radius: 50%;
+}
+  
+#myBtn:hover {
+background-color: #FFF4BA;
+}
+
+#arrow {
+    margin: 0 13px -3px 13px;
+} 
+
+.test {
+    height: 2000px;
+    background-color: #9CD1AA;
+}
+
+.white {
+    height: 200px;
+    background-color: white;
+}

@@ -1,0 +1,548 @@
+body {
+    margin: 0px;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather', Tahoma, Verdana, sans-serif;
+    color: #323232;
+    background-color: #FFFEFC;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 46px;
+}
+
+h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 3.1875rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 175%;
+    width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+}
+
+a:visited {
+    color: #323232;
+}
+
+.title {
+    color: #323232;
+}
+
+.top-box {
+    height: 30px;
+    width: 100vw;
+    background-color: #9CD1AA;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 1rem;
+    text-align: center;
+    margin: 8px;
+    padding-bottom: 60px;
+    color: #323232;
+}
+
+.main-nav > li {
+    padding: 8px;
+    font-size: 1.125rem;
+}
+
+.active-nav {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.quote-attribution {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.4375rem;
+    justify-content: center;
+}
+
+img {
+    /* HOVER OFF */
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.8);
+    transition: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.kitty-chair:hover, .kitty-smiling:hover {
+    transform: scale(1);
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #9CD1AA;
+    border-style: none;
+    border-radius: .5rem;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    height: auto;
+    /* HOVER OFF */
+    transition: 0.4s;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+button:hover {
+    font-weight: 700;
+    color: inherit;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.pic-box {
+    width: 80%;
+    max-width: 1169px;
+    height: 545px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-color: #9CD1AA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.kitty-chair {
+    width: 466px;
+    height: 311.38px;
+    object-fit: cover; 
+}
+
+.kitty-chair-container {
+    width: 466px;
+    height: 311.38px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px; 
+    max-width: 100%;
+}
+  
+.pic-box-contents {
+  margin: auto;
+}
+
+.caption {
+    width: 466px;
+    margin-top: 30px;
+    font-size: .9375rem;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 6rem;
+    align-items: flex-end;
+    max-width: 1000px;
+    /* 2-BOOK ROW BREAKS AT 942PX 
+    DETERMINED BY MIN-WIDTH OF INDIVIDUAL BOOKS'S DIV WIDTH */
+    align-content: space-between;
+    row-gap: 6rem;
+}
+
+.muse-annie, .run, .cia, .living-room, .island {
+    margin: auto;
+    margin-bottom: 0;
+    min-width: 19.625rem;
+}
+
+.muse-annie-cover-small, .run-cover-small, .cia-cover-small, .living-room-cover-small, .island-cover-small {
+    width: 180px;
+    display: block;
+    margin: auto;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.muse-annie-cover-small {
+    height: 283.91px;
+}
+
+.muse-annie-button, .run-button, .cia-button, .living-room-button, .island-button  {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.run-cover-small {
+    height: 259.18px;
+    margin-top: 34px;
+}
+
+.run-button {
+    margin-top: 45.82px;
+}
+
+.cia-cover-small {
+    height: 279.81px;
+    margin-top: 24px;
+}
+
+.living-room-title {
+    margin-top: 0;
+}
+
+.living-room-cover-small {
+    height: 283.91px;
+}
+
+.island-title {
+    margin-bottom: 2.5rem;
+}
+
+.island-cover-small {
+    height: 258.24px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+.flying-girl {
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 12%;
+}
+
+.flying-girls {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#flying-girl-1 {
+    transform: rotate(-7deg);
+}
+
+#flying-girl-2 {
+    transform: rotate(20deg) translateY(-20px);
+}
+
+#flying-girl-3 {
+    transform: translateY(20px);
+}
+
+#flying-girl-4 {
+    transform: rotate(-25deg) translateY(-50px);
+}
+
+#flying-girl-5 {
+    transform: rotate(-15deg);
+    margin-bottom: 7rem;
+}
+
+#flying-girl-1:hover,
+#flying-girl-2:hover,
+#flying-girl-3:hover,
+#flying-girl-4:hover {
+    transform: scale(1.4);
+}
+
+#flying-girl-5:hover {
+    transform: rotate(-20deg) scale(1.8);
+}
+
+.books-praise {
+    margin: auto;
+    margin-bottom: 4rem;
+    transform: translateX(-8rem);
+}
+
+.books-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.muse-annie-left, .run-left, .cia-left, .living-room-left, .island-left {
+    margin-right: 4rem;
+}
+
+.muse-annie-left {
+    margin-top: 8.5rem;
+}
+
+.run-left {
+    margin-top: -100rem;
+}
+
+.cia-left {
+    margin-top: -82rem;
+}
+
+.living-room-left {
+    margin-top: -4.5rem;
+}
+
+.island-left {
+    margin-top: -1rem;
+}
+
+.review-links, .essay-links, .links, .articles-links {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 48.875rem;
+    justify-content: space-between;
+    margin-top: 2.5625rem;
+    margin-bottom: 5.8125rem;
+}
+
+.links {
+    height: 2rem;
+}
+
+.review-links a, .essay-links a, .links a, .articles-links a {
+    color: #04516C;
+}
+
+.teaching {
+    height: 55.9375rem;
+    width: 37.6875rem;
+    border-radius: 8px;
+    background-color: #9CD1AA;
+    margin: auto;
+    margin-bottom: 144px;
+    display: flex;
+}
+
+.teaching-list {
+    margin: auto;
+    text-align: center;
+}
+
+.articles-links {
+    height: 10rem;
+    margin-bottom: 15vh;
+}
+
+.kitty-smiling {
+    height: 180px;
+    width: 162px;
+    border-radius: 8px;
+    margin: auto; 
+}
+
+.bio {
+    margin-top: 3rem;
+}
+
+.vita {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.not-italic {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 250%;
+}
+
+.small-screens {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .books-praise {
+        transform: none;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 942px) {
+    /* .books {
+        margin: auto;
+    } */
+
+    .button {
+        font-size: .9375rem;
+        font-weight: 400;
+    }
+
+    .muse-annie-left, .run-left, .cia-left, .living-room-left, .island-left {
+        margin-right: 0;
+        margin: auto;
+    }
+
+    .books-section {
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 745px) {
+    p {
+        width: 466px;
+        font-size: .9375rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        line-height: 200%;
+    }
+
+    .articles-links, .essay-links, .links, .review-links {
+        font-size: 1.125rem;
+    }
+
+    .bio {
+        margin-top: 60px;
+    }
+    
+    .vita {
+        margin-bottom: 7rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    /* KITTY IN CHAIR */
+    .pic-box {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 2rem;
+    }
+
+    .vita {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 638px) {
+    .teaching {
+        width: auto;
+        }
+
+    .books {
+        row-gap: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 514px) {
+    p, .caption {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        width: auto;
+    }
+
+    .caption {
+        margin-bottom: 0;
+    }
+
+    .pic-box {
+        height: 31.25rem;
+    }
+
+    .pic-box-contents {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .kitty-chair {
+        width: 100%; 
+        height: auto;
+        display: block;
+        margin: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .kitty-chair-container {
+        width: 100%; 
+        height: auto; 
+        margin: 0;
+    }
+
+    .bio {
+        margin-top: 2rem;
+    }
+    
+    .vita {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .small-screens {
+        display: block;
+    }
+
+    .teaching {
+        border-radius: 0;
+        margin-bottom: 144px;
+        }
+    
+    .big-screens {
+        display: none;
+    }
+
+    .flying-girl {
+        width: 30%;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    img:hover, 
+    button:hover {
+      transform: scale(1);
+      border: medium solid #323232;
+    }
+
+    #flying-girl-1:hover,
+    #flying-girl-2:hover,
+    #flying-girl-3:hover,
+    #flying-girl-4:hover {
+        transform: scale(1);
+    }
+  }
